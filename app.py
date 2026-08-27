@@ -2,14 +2,14 @@ from flask import Flask
 app=Flask(__name__)
 @app.route("/")
 def home():
-	return "welcome to flask applications and its running successfully"
+	return """welcome to flask applications and its running successfully
 	<html>
-	<head>
+	
 	<body>
 	 <h1>Hello Rgukt</h1>
 	</body>
-	</head>
-	 </html>
+	
+	 </html> """
 if __name__=='__main__':
  app.run(host='0.0.0.0',port=5000)
 
